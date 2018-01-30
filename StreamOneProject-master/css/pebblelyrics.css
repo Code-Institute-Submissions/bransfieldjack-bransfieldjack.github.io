@@ -3,6 +3,8 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
     background-attachment: fixed;
+    padding:0px; margin:0px;  
+    font-family:arial,helvetica,sans-serif,verdana,'Open Sans';
 }
 html {
   width: 100%;
