@@ -22,150 +22,97 @@
 
 <body>
 
+  <div class="banner">
+        <img id="banner" src="img/banner.jpg" alt="Banner Image"/>
+    </div>
+
 	<!-- NavBar -->
-			<div class="container">
-		   <div class="navbar-header">
-		      <a class="navbar-brand" href="#"></a>
-		   </div>
-				 
-		   <ul class ="nav navbar-nav navbar-right">
-		      <li><a href="home.html">Home</a></li>
-		      <li><a href="about.html">About</a></li>
-		      <li><a href="portfolio.html">Portfolio</a></li>
-		      <li><a href="contact.html">Contact</a></li>
-		   </ul>
-		</div>
 
-		<!-- Jumbotron Welcome --> 
-		<div class="jumbotron">
-				<div class="header">
-					<h1> Welcome to PebbleLyrics. </h1>
-				</div>
+        <nav class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="#" class="navbar-brand">Pebble Lyrics</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              
+          <ul class="nav navbar-nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-		</div>
 
-<!-- Carousel -->
 
-<div id="carousel">
-  <div id="buttons">
-    <a href="#" id="prev">prev</a>
-    <a href="#" id="next">next</a>
-    <div class="clear"></div>
+        <!-- Jumbotron Welcome --> 
+        <div class="jumbotron">
+                <div class="header">
+                    <h1> Welcome to PebbleLyrics. </h1>
+                </div>
+        </div>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/golf.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
   </div>
-  
-  <div class="clear"></div>
 
-  <div id="slides"> 
-    <ul>
-      <li><img src="img/golf.jpg" width="240" height="240" alt="Slide 1"/></li>
-      <li><img src="img/house.jpg" width="240" height="240" alt="Slide 2"/></li>
-      <li><img src="img/tree.jpg" width="240" height="240" alt="Slide 3"/></li>
-    </ul>
-    <div class="clear"></div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img/house.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
   </div>
 
-<!-- Carousel Javascript -->
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img/tree.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
 
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
 
-<script type="text/javascript">
-$(document).ready(function() {
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
 
-  //rotation speed and timer
-  var speed = 5000;
-  var run = setInterval('rotate()', speed); 
-  
-  //grab the width and calculate left value
-  var item_width = $('#slides li').outerWidth(); 
-  var left_value = item_width * (-1); 
-        
-    //move the last item before first item, just in case user click prev button
-  $('#slides li:first').before($('#slides li:last'));
-  
-  //set the default item to the correct position 
-  $('#slides ul').css({'left' : left_value});
+<script>
 
-    //if user clicked on prev button
-  $('#prev').click(function() {
+var slideIndex = 0;
+showSlides();
 
-    //get the right position            
-    var left_indent = parseInt($('#slides ul').css('left')) + item_width;
-
-    //slide the item            
-    $('#slides ul').animate({'left' : left_indent}, 200,function(){    
-
-            //move the last item and put it as first item             
-      $('#slides li:first').before($('#slides li:last'));           
-
-      //set the default item to correct position
-      $('#slides ul').css({'left' : left_value});
-    
-    });
-
-    //cancel the link behavior            
-    return false;
-            
-  });
-
- 
-    //if user clicked on next button
-  $('#next').click(function() {
-    
-    //get the right position
-    var left_indent = parseInt($('#slides ul').css('left')) - item_width;
-    
-    //slide the item
-    $('#slides ul').animate({'left' : left_indent}, 200, function () {
-            
-            //move the first item and put it as last item
-      $('#slides li:last').after($('#slides li:first'));                  
-      
-      //set the default item to correct position
-      $('#slides ul').css({'left' : left_value});
-    
-    });
-             
-    //cancel the link behavior
-    return false;
-    
-  });        
-  
-  //if mouse hover, pause the auto rotation, otherwise rotate it
-  $('#slides').hover(
-    
-    function() {
-      clearInterval(run);
-    }, 
-    function() {
-      run = setInterval('rotate()', speed); 
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
     }
-  ); 
-        
-});
-
-//a simple function to click next link
-//a timer will call this function, and the rotation will begin :)  
-function rotate() {
-  $('#next').click();
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
 </script>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-</div>
-
-
-
-
 
 </body>
 <html>

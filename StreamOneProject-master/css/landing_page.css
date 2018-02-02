@@ -34,9 +34,10 @@ h1 {
 }
 .button {
 	text-align: center;
-	width: 500px;
-	height: auto;
-    border: auto;
     padding: auto;
     margin: auto;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    width: 30px;
+    height: 5px;
 }
