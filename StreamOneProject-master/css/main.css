@@ -99,3 +99,32 @@ video {
     height: 508px;
 }
 
+/* Begin side navigation bar classes (Portfolio Page) */
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.sidenav a {
+    padding: 10px 10px 20px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* End size navigation bar clasees (Portfolio Page) */
