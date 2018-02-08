@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Portfolio</title>
+    <title>House warming</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -27,31 +27,6 @@
 
 <body> 
 
-  <header>
-
-      <!-- Header Bar -->
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-              <div class="container-fluid">
-                  <div class="navbar-header">
-                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                          <span class="sr-only">Toggle navigation</span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                      </button>
-                        <div class="navbar-collapse collapse">
-                          <ul class="nav navbar-nav">
-                            <li><a href="home.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                          </ul>
-                        </div>
-              </div>
-        </nav>
-      </header>
-    <!-- End Header Bar -->
-
     <!-- Begin Sidebar -->
     <div class="sidenav">
       <a href="noveltypictures.html">Novelty Pictures</a>
@@ -69,9 +44,7 @@
       <a href="profession.html">Profession</a>
     </div>
 
-
-
-    <!-- Thumbnail Gallery Start -->
+<!-- Thumbnail Gallery Start -->
 
     <div class="thumbs"> 
         
@@ -148,32 +121,9 @@
     </div>
 
     <!-- Gallery Content End -->
+
     
-
-
-    <!-- Javascript Beginning --> 
-
-   <script type="text/javascript">
-
-      $(document).ready(function(){
-          $("img").width(200);
-
-          $("img").onclick(function()
-          {
-            $(this).css("cursor", "pointer");
-          });
-
-          $("img").toggle(function()
-          {
-            $(this).animate({width: "500px"}, "slow");},
-            function()
-            {
-              $(this).animate({width: "200px"}, "slow");
-            });
-          });
-
-
-    </script>
+    
 
 
     

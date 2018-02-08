@@ -32,19 +32,6 @@ p {
 	margin-right: 350px;
 	margin-left: 350px;
 }
-.thumbfont { /* Thumbnail Text Styling on the Portfolio Page */
-  font-family: Snell Roundhand Script;
-<<<<<<< HEAD
-  font-size: 18px;
-  text-align: center;
-=======
-  font-size: 5px;
-  text-align: center;
-  margin-right: 350px;
-  margin-left: 350px;
->>>>>>> 9b172f88c7547d83349c76634a905fb880959ac6
-}
-
 /*Vertical Alignment Class*/
 .vertical-center {
 	min-height: 50%;  /* Fallback for browsers do NOT support vh unit */
@@ -129,7 +116,7 @@ video {
 .sidenav a {
     padding: 10px 10px 20px 20px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
     margin-left: 5px;
@@ -140,3 +127,18 @@ video {
 }
 
 /* End size navigation bar clasees (Portfolio Page) */
+
+/* Thumbnail Gallery Pics */
+
+.thumbs {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  .thumbs {
+    padding-top: 56px;
+  }
+}
+
+/* End Thumbnail Gallery Pics */
+
