@@ -34,8 +34,15 @@ p {
 }
 .thumbfont { /* Thumbnail Text Styling on the Portfolio Page */
   font-family: Snell Roundhand Script;
+<<<<<<< HEAD
   font-size: 18px;
   text-align: center;
+=======
+  font-size: 5px;
+  text-align: center;
+  margin-right: 350px;
+  margin-left: 350px;
+>>>>>>> 9b172f88c7547d83349c76634a905fb880959ac6
 }
 
 /*Vertical Alignment Class*/
