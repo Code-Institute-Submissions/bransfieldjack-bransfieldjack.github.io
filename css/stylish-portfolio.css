@@ -31,6 +31,9 @@ body {
   font-size: 1rem;
   text-transform: uppercase;
 }
+p {
+  color: #667292;
+}
 
 h1,
 h2,
@@ -102,6 +105,7 @@ h6 {
 
 .masthead h1 {
   font-size: 4rem;
+  font-family: "Times New Roman", Times, serif;
   margin: 0;
   padding: 0;
 }
@@ -126,7 +130,7 @@ h6 {
   transition: all 0.4s ease 0s;
   -webkit-transform: translateX(250px);
   transform: translateX(250px);
-  background: #1D809F;
+  background: #bccad6;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -148,7 +152,7 @@ h6 {
 
 .sidebar-nav li a:hover {
   text-decoration: none;
-  color: #fff;
+  color: #f1e3dd;
   background: rgba(255, 255, 255, 0.2);
 }
 
@@ -172,7 +176,7 @@ h6 {
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-  color: #fff;
+  color: #bccad6;
   background: none;
 }
 
@@ -190,7 +194,7 @@ h6 {
   width: 50px;
   height: 50px;
   text-align: center;
-  color: #fff;
+  color: #bccad6;
   background: rgba(52, 58, 64, 0.5);
   line-height: 50px;
   z-index: 999;
@@ -201,7 +205,7 @@ h6 {
 }
 
 .menu-toggle:hover {
-  background: #343a40;
+  background: #f1e3dd;
 }
 
 .service-icon {
@@ -332,15 +336,25 @@ a:hover, a:focus, a:active {
   color: #155d74;
 }
 
+.btn-custom1 {
+  background-color: #f1e3dd !important;
+  border-color: #bccad6 !important;
+}
+
+.btn-custom1:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #f1e3dd !important;
+  border-color: #f1e3dd !important;
+}
+
 .btn-primary {
-  background-color: #92a8d1 !important;
-  border-color: #92a8d1 !important;
+  background-color: #bccad6 !important;
+  border-color: #bccad6 !important;
   color: #fff !important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #eea29a !important;
-  border-color: #eea29a !important;
+  background-color: #f1e3dd !important;
+  border-color: #f1e3dd !important;
 }
 
 .btn-secondary {
@@ -365,7 +379,10 @@ a:hover, a:focus, a:active {
 }
 
 .bg-primary {
-  background-color: #1D809F !important;
+  background-color: #f1e3dd !important;
+}
+.bg-secondary {
+  background-color: #bccad6 !important;
 }
 
 .text-primary {
