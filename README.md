@@ -46,7 +46,7 @@ The results of the unit tests flagged a an issues with the navigation bar on eve
 During an earlier commit, the 'stylish-portfolio.min.js' file had been renamed to 'stylish-portfolio.js'. 
 This was causing the navbar to become completely unresponsive in production (github pages) but that was not the case in staging, as it worked as normal in Cloud 9 IDE. 
 
-![](https://s3-ap-southeast-2.amazonaws.com/stream-one-project/unit_testing_navbar_issue.png)
+![Unit Test Image](https://s3-ap-southeast-2.amazonaws.com/stream-one-project/unit_testing_navbar_issue.png)
 
 ### Manual Testing (Web Application Testing):
 
