@@ -1,3 +1,0 @@
-Light Box javascript
-
-https://mdbootstrap.com/javascript/bootstrap-gallery/

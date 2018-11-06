@@ -3,12 +3,14 @@
 
   <head>
 
+    <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-     <!-- Bootstrap Core CSS -->
+    <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
     
     <!-- Bootstrap core JavaScript -->
@@ -22,12 +24,10 @@
     
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link href="/css/gallery.css" rel="stylesheet">
-
-    <!-- Custom scripts for this template -->
-    <script src="js/stylish-portfolio.min.js"></script>
+    
+    
+  </head>
     
   </head>
 
@@ -61,37 +61,37 @@
 
         <div class="col-lg-2 col-md-4 col-xs-6">
           <a href="#" class="d-block mb-4 h-100">
-            <img class="img-thumbnail myImg" src="/img/Spanish Wedding/church.jpg" alt="" style="height:200px;width:150px;">
+            <img class="img-thumbnail galleryImage" src="/img/Spanish Wedding/church.jpg" alt="" style="height:200px;width:150px;">
           </a>
         </div>
         <div class="col-lg-2 col-md-4 col-xs-6">
           <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail myImg" src="/img/Spanish Wedding/couple.jpg" alt="" style="height:200px;width:150px;">
+            <img class="img-fluid img-thumbnail galleryImage" src="/img/Spanish Wedding/couple.jpg" alt="" style="height:200px;width:150px;">
           </a>
         </div>
         <div class="col-lg-2 col-md-4 col-xs-6">
           <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail myImg" src="/img/Spanish Wedding/couple2.jpg" alt="" style="height:200px;width:150px;">
+            <img class="img-fluid img-thumbnail galleryImage" src="/img/Spanish Wedding/couple2.jpg" alt="" style="height:200px;width:150px;">
           </a>
         </div>
         <div class="col-lg-2 col-md-4 col-xs-6">
           <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail myImg" src="/img/Spanish Wedding/design.jpg" alt="" style="height:200px;width:150px;">
+            <img class="img-fluid img-thumbnail galleryImage" src="/img/Spanish Wedding/design.jpg" alt="" style="height:200px;width:150px;">
           </a>
         </div>
         <div class="col-lg-2 col-md-4 col-xs-6">
           <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail myImg" src="/img/Spanish Wedding/design2.jpg" alt="" style="height:200px;width:150px;">
+            <img class="img-fluid img-thumbnail galleryImage" src="/img/Spanish Wedding/design2.jpg" alt="" style="height:200px;width:150px;">
           </a>
         </div>
         <div class="col-lg-2 col-md-4 col-xs-6">
           <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail myImg" src="/img/Spanish Wedding/flowers.jpg" alt="" style="height:200px;width:150px;">
+            <img class="img-fluid img-thumbnail galleryImage" src="/img/Spanish Wedding/flowers.jpg" alt="" style="height:200px;width:150px;">
           </a>
         </div>
         <div class="col-lg-2 col-md-4 col-xs-6">
           <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail myImg" src="/img/Spanish Wedding/flowerspics.jpg" alt="" style="height:200px;width:150px;">
+            <img class="img-fluid img-thumbnail galleryImage" src="/img/Spanish Wedding/flowerspics.jpg" alt="" style="height:200px;width:150px;">
           </a>
         </div>
 
@@ -116,36 +116,12 @@
     <!-- /.container -->
 
     
-      <!-- The Modal -->
-      <div id="myModal" class="modal">
+       <!-- The Modal -->
+      <div id="Modal" class="modal">
         <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
+        <img class="modal-content" id="modalWindow">
         <div id="caption"></div>
       </div>
-
-      <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
-        
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = $('.myImg');
-        var modalImg = $("#img01");
-        var captionText = document.getElementById("caption");
-        $('.myImg').click(function(){
-            modal.style.display = "block";
-            var newSrc = this.src;
-            modalImg.attr('src', newSrc);
-            captionText.innerHTML = this.alt;
-        });
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-          modal.style.display = "none";
-        }
-        </script>
 
     <!-- Footer -->
     <footer class="footer text-center">
@@ -176,6 +152,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.min.js"></script>
+    <script src="/js/modal_functionality.js" rel="stylesheet"></script>
 
   </body>
 
