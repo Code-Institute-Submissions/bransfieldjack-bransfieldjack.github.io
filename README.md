@@ -37,6 +37,17 @@ Third party sources used in this project:
 
 ## Testing
 
+### Automated Testing
+
+Automated testing for this project was carried out using Selenium Web driver in microsoft visual studio with C#. 
+Unit testing was used to carry out form validation as well as verifying that the site can be opened using the respective web drivers, and that navigation links on the site can be access. 
+
+The results of the unit tests flagged a an issues with the navigation bar on every page on the site. 
+During an earlier commit, the 'stylish-portfolio.min.js' file had been renamed to 'stylish-portfolio.js'. 
+This was causing the navbar to become completely unresponsive in production (github pages) but that was not the case in staging, as it worked as normal in Cloud 9 IDE. 
+
+![](https://s3-ap-southeast-2.amazonaws.com/stream-one-project/unit_testing_navbar_issue.png)
+
 ### Manual Testing (Web Application Testing):
 
 Linking/pages:
@@ -76,17 +87,6 @@ Compatability:
 
  - Cross browser compatability testing has been conducted using Chrome, Firefox, Edge and Opera. 
  - Mobile compatability testing has been undertaken to ensure that the site works well on mobile devices. Issues with the modal "close" button have been resolved via this method. 
-
-### Automated Testing
-
-Automated testing for this project was carried out using Selenium Web driver in microsoft visual studio with C#. 
-Unit testing was used to carry out form validation as well as verifying that the site can be opened using the respective web drivers, and that navigation links on the site can be access. 
-
-The results of the unit tests flagged a an issues with the navigation bar on every page on the site. 
-During an earlier commit, the 'stylish-portfolio.min.js' file had been renamed to 'stylish-portfolio.js'. 
-This was causing the navbar to become completely unresponsive in production (github pages) but that was not the case in staging, as it worked as normal in Cloud 9 IDE. 
-
-![](https://s3-ap-southeast-2.amazonaws.com/stream-one-project/unit_testing_navbar_issue.png)
 
 ## Deployment
 
