@@ -14,6 +14,10 @@ This approach allowed for a more structured flow of information being recived fr
 The single scrolling site is also great for mobile use, however excessive scrolling was one problem I encountered. 
 To mitigate this, I have added seperate HTML pages where necessary. (Contact form & Portfolio etc.)
 
+The final,completed project can be viewed here:
+
+https://bransfieldjack.github.io/
+
 ## Technology Used
 
  * Sublimetext Text Editor
@@ -29,6 +33,7 @@ Third party sources used in this project:
 
  - https://www.w3schools.com/
  - https://startbootstrap.com/template-categories/all/
+ - Prior knowledge of testing with Selenium (Current role)
 
 ## Testing
 
@@ -81,7 +86,7 @@ The results of the unit tests flagged a an issues with the navigation bar on eve
 During an earlier commit, the 'stylish-portfolio.min.js' file had been renamed to 'stylish-portfolio.js'. 
 This was causing the navbar to become completely unresponsive in production (github pages) but that was not the case in staging, as it worked as normal in Cloud 9 IDE. 
 
-![NavBar Issues](https://s3-ap-southeast-2.amazonaws.com/stream-one-project/unit_testing_navbar_issue.PNG)
+![](https://s3-ap-southeast-2.amazonaws.com/stream-one-project/unit_testing_navbar_issue.PNG)
 
 ## Deployment
 
