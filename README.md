@@ -36,41 +36,41 @@ Third party sources used in this project:
 
 Linking/pages:
 
-	- Checked all outgoing (page to page) and internal links (form submission button).
-	- Checked all "jumping" links on the index.html page. The page scrolls as expected. 
-	- Confirmed that no orphan pages exist as part of this project. (Un-used pages left over from the development process)
-	- Tested form submission link and form validation. The form submission button should redirect to a locally installed email application - confirmed that is the case. 
+ - Checked all outgoing (page to page) and internal links (form submission button).
+ - Checked all "jumping" links on the index.html page. The page scrolls as expected. 
+ - Confirmed that no orphan pages exist as part of this project. (Un-used pages left over from the development process)
+ - Tested form submission link and form validation. The form submission button should redirect to a locally installed email application - confirmed that is the case. 
 	
 Form Testing:
 
-	- Confirmed that form validation is working as expected on the contact.html page. Users cannot submit a form without a valid email address. 
+ - Confirmed that form validation is working as expected on the contact.html page. Users cannot submit a form without a valid email address. 
 	
 Cookies Testing:
 
-	- Disabled cookies and confirmed that the site behaves as per normal. 
-	- No observable effect on application security after disabling cookies during or outside of a session. 
+ - Disabled cookies and confirmed that the site behaves as per normal. 
+ - No observable effect on application security after disabling cookies during or outside of a session. 
 
 HTML Validation:
 
-	- Validated all HTML code using: https://validator.w3.org/ (Fixed minor errors/warnings)
+ - Validated all HTML code using: https://validator.w3.org/ (Fixed minor errors/warnings)
 
 Database Testing
 
-	- Not applicable.
+ - Not applicable.
 
 Ease of Learning:
 
-	- The scrolling nature of the index.html page is intuitive. 
+ - The scrolling nature of the index.html page is intuitive. 
 
 Navigation:
 
-	- The site is relatively easy to navigate. The Navbar exists on every page and irrelevant links are prohibited where required. 
-	- I believe the site to be subjectively satisfying. It fulfills its purpose well and is visually pleasing. The site is not overladen with unecessary content. 
+ - The site is relatively easy to navigate. The Navbar exists on every page and irrelevant links are prohibited where required. 
+ - I believe the site to be subjectively satisfying. It fulfills its purpose well and is visually pleasing. The site is not overladen with unecessary content. 
 
 Compatability:
 
-	- Cross browser compatability testing has been conducted using Chrome, Firefox, Edge and Opera. 
-	- Mobile compatability testing has been undertaken to ensure that the site works well on mobile devices. Issues with the modal "close" button have been resolved via this method. 
+ - Cross browser compatability testing has been conducted using Chrome, Firefox, Edge and Opera. 
+ - Mobile compatability testing has been undertaken to ensure that the site works well on mobile devices. Issues with the modal "close" button have been resolved via this method. 
 
 ### Automated Testing
 
@@ -81,7 +81,7 @@ The results of the unit tests flagged a an issues with the navigation bar on eve
 During an earlier commit, the 'stylish-portfolio.min.js' file had been renamed to 'stylish-portfolio.js'. 
 This was causing the navbar to become completely unresponsive in production (github pages) but that was not the case in staging, as it worked as normal in Cloud 9 IDE. 
 
-https://s3-ap-southeast-2.amazonaws.com/stream-one-project/unit_testing_navbar_issue.PNG
+![NavBar Issues](https://s3-ap-southeast-2.amazonaws.com/stream-one-project/unit_testing_navbar_issue.PNG)
 
 ## Deployment
 
