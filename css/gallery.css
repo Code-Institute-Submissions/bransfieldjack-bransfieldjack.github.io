@@ -67,8 +67,8 @@ body {
 
 /* The Close Button */
 .close {
-    top: 0px;
-    left: 100%;
+    top: 5px;
+    right: 100px;
     position: relative;
     color: #f1f1f1;
     font-size: 40px;
@@ -86,7 +86,7 @@ body {
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
     .modal-content {
-        width: 50%;
+        width: 100%;
     }
 }
 galleryImage{
