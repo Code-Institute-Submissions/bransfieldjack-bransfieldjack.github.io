@@ -1,7 +1,5 @@
 
-
 describe("Modal", function() {
-  var modal = document.getElementById('Modal');
 
   beforeEach(function() {
     modal = new Modal();

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
   <meta charset="utf-8">
   <title>Jasmine Spec Runner v2.4.1</title>
 
@@ -15,10 +16,32 @@
   <script src="src/Player.js"></script>
   <script src="src/Song.js"></script>
 
-  <!-- include spec files here... -->
-  <script src="spec/SpecHelper.js"></script>
-  <script src="spec/modalSpec.js"></script>
-  <script src="/js/modal_functionality.js" rel="stylesheet"></script>
+  
+
+  <script>
+  
+    
+    open = document.getElementById('Modal');
+    
+    var Modal = function() {
+      return {
+        open: function(open){
+          return open;
+        }
+      }
+    }
+    
+    describe('calculatorSuite', function(){
+      
+      var modal = new Modal();
+      
+      it('should open', function(){
+        expect(modal.open(open));
+      })
+      
+    });
+    
+  </script>
 
 </head>
 
