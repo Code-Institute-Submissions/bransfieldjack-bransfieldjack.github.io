@@ -19,6 +19,31 @@ The final, completed project can be viewed here:
 
 https://bransfieldjack.github.io/
 
+# Site Navigation Description:
+
+The user arrives at the top of the scrolling site page. 
+They are greeted by a detailed, vivid background image of a beach. 
+There are only two visible clickable buttons, in line with the minimal feel of the site. 
+There is a "find out more" page jump button, and a navbar menu toggle button. 
+Clicking on the find out more button, will automatically scroll the user down the page of the site to the about section describing the site. 
+The about section also contains another page jump button, which will further scroll the user to another section containing information about the artist.
+After the user has begun navigating their way down the page, a "scroll to top" button will appear in the lower right hand corner of the page.
+This can be used to easily and quickly navigate back to the welcome banner at the top of the site. 
+The portfolio section of the site is where the artist is showcasing their work. 
+It was important to choose material contained in the portfolio secition of the main page, which was in keeping with the selection of colors/palette chosen for the theme of the project. 
+Each image was styled using the bootstrap portfolio item class, which allowed for the images to respond when hovered over. 
+Clicking on an image will navigate to the respective profiles gallery, which will contain an array of pictures and a description of the work. 
+When the user clicks on the thumbnail picture in the profile area, a modal window with a scaled version of the same image will appear. 
+The user can easily close the image using the close button in the upper right hand corner of the modal.
+The user can navigate back to the main scrolling site using the menu toggle button, who's list items have been reduced accordingly as per each profile page. 
+There is also and option for the user to navigate to a contact page. 
+This also exists as an option in the main page area as well, underneath the portfolio section.
+The contact page for the site is in line with the minimalist theme, and contains one form with email validation as well as a pair of social media links at the bottom of the page. 
+These links will redirect the user to the artists facebook and instagram accounts, and the links appear on every one of the sites pages. 
+At the end of the main page I have included an iframe with geographical information of the artists whereabouts in the form of a google maps link.
+All of the above functionality has been tested with chromes dev tools for mobile first, responsive functionality, and I have confirmed the same with no issues. 
+
+
 ## Technology Used
 
  * Sublimetext Text Editor
