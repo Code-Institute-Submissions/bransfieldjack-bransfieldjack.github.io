@@ -19,7 +19,7 @@ The final, completed project can be viewed here:
 
 https://bransfieldjack.github.io/
 
-# Site Navigation Description:
+## Site Navigation Description:
 
 The user arrives at the top of the scrolling site page. 
 They are greeted by a detailed, vivid background image of a beach. 
